@@ -20,8 +20,4 @@ personalMovieDb.movies[lastSeenMovie1] = rateOfLastSeenMovie1;
 
 personalMovieDb.movies[lastSeenMovie2] = rateOfLastSeenMovie2;
 
-console.log(personalMovieDb)
-
-// personalMovieDb.movies["lastSeenMovie1"] = rateOfLastSeenMovie1;
-
-// console.log(personalMovieDb);
+console.log(personalMovieDb);
