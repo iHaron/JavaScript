@@ -1,22 +1,27 @@
 "use strict";
 
-// console.log(4 + " - object");
-// console.log(4+ +"5");
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-// let incr = 10,
-//     decr = 10;
+let personalMovieDb = {
+    count: numberOfFilms,
+    movies: {},
+    actors: "",
+    genres: "",
+    privat: false
+};
 
-// // ++incr;
-// // --decr;
+let lastSeenMovie1 = prompt("Один из последних просмотренных фильмов?", "");
+let rateOfLastSeenMovie1 = prompt("На сколько оцените его?", "");
 
-// console.log(++incr);
-// console.log(--decr);
+let lastSeenMovie2 = prompt("Один из последних просмотренных фильмов?", "");
+let rateOfLastSeenMovie2 = prompt("На сколько оцените его?", "");
 
-// console.log(5%2);
+personalMovieDb.movies[lastSeenMovie1] = rateOfLastSeenMovie1;
 
-console.log(2 + 2 * 2 !== "6");
+personalMovieDb.movies[lastSeenMovie2] = rateOfLastSeenMovie2;
 
-const isChecked = false,
-      isClose = false;
+console.log(personalMovieDb.movies)
 
-console.log(isChecked || isClose);
+// personalMovieDb.movies["lastSeenMovie1"] = rateOfLastSeenMovie1;
+
+// console.log(personalMovieDb);
